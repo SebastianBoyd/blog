@@ -1,55 +1,64 @@
-<style>
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,100');
-@import url('https://cdn.jsdelivr.net/npm/hack-font/build/web/hack.css');
 
-/* Please be mindful of the fact that there are currently a ton of varying font sizes and styles. I think that it would be a better idea to just use consistent text styling throughout the entire post */
-:root {
-  --color-prm: #00E676;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background: #FFF;
-  color: #040404;
-  margin: 0;
-  font-size: 1.25em;
-  transition: all .3s linear;
-}
-
-.content {
-  width: 40vw;
-  margin: 0 auto;
-  padding: 2%;
-  /*background: #161b1d;
-  box-shadow: 3.5px 2px 8px rgba(0,0,0,.45);*/
-}
-
-.title {
-  font-size: 3em;
-  /* text-decoration: underline dotted; */
-  font-weight: 100;
-  background: var(--color-prm);
-  color: white;
-  padding: 16px;
-}
-
-/* add copy button */
-code {
-  padding: 2%;
-  background: #e0e0e0;
-  font-family: 'Hack', monospace;
-  font-size: .7em;
-  border-left: 8px solid var(--color-prm);
-}
-</style>
-<div class='content'>
-  <h1 class='title'>This is a title</h1>
-  <div id='article'>
-    <p>Whoa Typing</p>
-    <code>here is what code looks like</code>
-    <p>Here is some typing at length so that way the bounds of the content viewport can be checked to be accurate.</p>
-  </div>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="preload">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400" rel="preload">
+    <title>Sebastian's Blog</title>
+    <style>
   
-  <!-- Links to various related articles (sort be tag?) -->
-  <div id='footer'>This is where the footer is</div>
-</div>
+      /* Please be mindful of the fact that there are currently a ton of varying font sizes and styles. I think that it would be a better idea to just use consistent text styling throughout the entire post */
+      :root {
+        --color-prm: #00E676;
+      }
+      
+      body {
+        font-family: 'Roboto', sans-serif;
+        background: #FFF;
+        color: #040404;
+        margin: 0;
+        font-size: 1.25em;
+      }
+      
+      .content {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 2%;
+        /*background: #161b1d;
+        box-shadow: 3.5px 2px 8px rgba(0,0,0,.45);*/
+      }
+      
+      .title {
+        font-size: 3em;
+        /* text-decoration: underline dotted; */
+        font-weight: 100;
+        background: var(--color-prm);
+        color: white;
+        padding: 16px;
+      }
+      
+      /* add copy button */
+      code {
+        padding: 2%;
+        background: #e0e0e0;
+        font-family: 'Roboto Mono', monospace;
+        font-size: .7em;
+        border-left: 8px solid var(--color-prm);
+      }
+      </style>
+  </head>
+  
+  <body>
+    <div class='content'>
+      <h1 class='title'>This is a title</h1>
+      <div id='article'>
+        <p>Whoa Typing</p>
+        <code>here is what code looks like</code>
+        <p>Here is some typing at length so that way the bounds of the content viewport can be checked to be accurate.</p>
+      </div>
+      
+      <!-- Links to various related articles (sort be tag?) -->
+      <div id='footer'>This is where the footer is</div>
+    </div>
+  </body>
+  
+</html>
