@@ -18,9 +18,14 @@
         margin: 0;
         font-size: 1.25em;
       }
+
+      img {
+        width: 100%;
+      }
       
       .content {
-        width: 80vw;
+        width: 90vw;
+        max-width: 900px;
         margin: 0 auto;
         padding: 2%;
         /*background: #161b1d;
@@ -37,12 +42,18 @@
       }
       
       /* add copy button */
-      code {
+      .code {
         padding: 2%;
+        margin: 8px 0 8px 0;
         background: #e0e0e0;
         font-family: 'Roboto Mono', monospace;
         font-size: .7em;
         border-left: 8px solid var(--color-prm);
+        display: inline-block;
+      }
+
+      footer {
+        margin-top: 16px;
       }
       </style>
   </head>
@@ -52,8 +63,9 @@
       <h1 class='title'>This is a title</h1>
       <div id='article'>
         <p>Whoa Typing</p>
-        <code>here is what code looks like</code>
+        <span class='code'>here is what code looks like</span>
         <p>Here is some typing at length so that way the bounds of the content viewport can be checked to be accurate.</p>
+        <img src=photos/full-res/katsobushi.jpg>
       </div>
       
       <!-- Links to various related articles (sort be tag?) -->
