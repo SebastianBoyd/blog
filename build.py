@@ -1,0 +1,2 @@
+import resize
+resize.run()

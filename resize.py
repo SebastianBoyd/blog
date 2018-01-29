@@ -22,16 +22,18 @@ def save(img, location):
     img.save(location)
     return True
 
-for i in IMAGES:
-    img = load(INPUT_DIR + i)
-    no_suffix = i.split('.', 1)[0]
-    suffix = i.split('.', 1)[1]
-    print(no_suffix)
+def run():
+    for i in IMAGES:
+        img = load(INPUT_DIR + i)
+        no_suffix = i.split('.', 1)[0]
+        suffix = i.split('.', 1)[1]
+        print(no_suffix)
 
-    for w in OUTPUT_WIDTHS:
-        resized = resize(img, w)
-        print resized
-        output_loc = OUTPUT_DIR + no_suffix + '@' + str(w) + 'px.' + suffix
-        save(resized, output_loc)
+        for w in OUTPUT_WIDTHS:
+            resized = resize(img, w)
+            print resized
+            output_loc = OUTPUT_DIR + no_suffix + '@' + str(w) + 'px.' + suffix
+            save(resized, output_loc)
 
-
+if __name__ == "__main__":
+    run()
